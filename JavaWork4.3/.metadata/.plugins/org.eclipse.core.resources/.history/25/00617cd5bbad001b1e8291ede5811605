@@ -1,0 +1,49 @@
+import java.time.LocalDate;
+
+import Concrete.CommunicationManager;
+import Concrete.GameCategoryManager;
+import Concrete.GameManager;
+import Concrete.GamerManager;
+import Concrete.MersisManager;
+import Concrete.Logs.DataBaseLog;
+import Concrete.Logs.FileLog;
+import Concrete.Logs.SmsLog;
+import Entity.Communication;
+import Entity.Game;
+import Entity.GameCategory;
+import Entity.Gamer;
+
+public class MAIN {
+
+	public static void main(String[] args) {
+		
+		Communication communication = new Communication(1, "5553332211", "deneme@gmail.com", "adres1");
+		CommunicationManager communicationManager = new CommunicationManager(new FileLog());
+		communicationManager.Add(communication);
+		communicationManager.Update(communication);
+		communicationManager.Delete(communication);
+		System.out.println("\n\n");
+		
+		Gamer gamer = new Gamer(1, "Mahmut", "Erdem", "456789153", communication);
+		
+		GamerManager gamerManager = new GamerManager(new MersisManager(),new SmsLog());
+		gamerManager.Add(gamer);
+		gamerManager.Update(gamer);
+		gamerManager.Delete(gamer);
+		System.out.println("\n\n");
+		
+		GameCategory category = new GameCategory(1,"Strateji Oyunlarý");
+		GameCategoryManager categoryManager = new GameCategoryManager(new DataBaseLog());
+		categoryManager.Add(category);
+		categoryManager.Update(category);
+		categoryManager.Delete(category);
+		System.out.println("\n\n");
+		
+		Game game = new Game(1,"StarCraft2",LocalDate.ofYearDay(2010,1),200,category);
+		GameManager gameManager = new GameManager(new SmsLog());
+		gameManager.Add(game);
+		gameManager.Update(game);
+		gameManager.Delete(game);
+	}
+
+}

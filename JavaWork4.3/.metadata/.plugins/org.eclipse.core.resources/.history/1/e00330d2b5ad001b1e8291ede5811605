@@ -1,0 +1,5 @@
+package Concrete.Logs;
+
+public class SmsLog {
+     
+}

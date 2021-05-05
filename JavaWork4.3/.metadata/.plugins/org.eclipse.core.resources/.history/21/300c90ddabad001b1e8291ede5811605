@@ -1,0 +1,6 @@
+package Abstruct;
+
+public interface Log {
+	void LogMessage(int id ,String Message);
+	
+}

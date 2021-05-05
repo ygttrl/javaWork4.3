@@ -1,0 +1,47 @@
+package Concrete;
+
+import Abstruct.DiscountService;
+import Abstruct.Log;
+import Entity.Discount;
+
+public class DiscountManager implements DiscountService {
+
+	
+	private Log log;
+	
+	public DiscountManager(Log log) {		
+		this.log = log;
+	}
+
+	@Override
+	public void Add(Discount discount) {
+		
+		try {
+			System.out.println(discount.getId()+" "+discount.getDiscountRate()+" "+discount.getDiscountName()+" Ýnidirim Eklendi");
+			log.LogMessage(discount, "Baþarýlý");
+		} catch (Exception e) {
+			log.LogMessage(discount, "Hatalý");
+		}		
+		
+	}
+
+	@Override
+	public void Update(Discount discount) {
+		
+		try {
+			System.out.println(discount.getId()+" 'li Ýnidirim Eklendi");
+			log.LogMessage(discount, "Baþarýlý");
+		} catch (Exception e) {
+			log.LogMessage(discount, "Hatalý");
+		}
+		
+		
+	}
+
+	@Override
+	public void Delete(Discount discount) {
+		System.out.println(discount.getId()+" 'li Ýnidirim SÝLÝNDÝ");
+		
+	}
+
+}

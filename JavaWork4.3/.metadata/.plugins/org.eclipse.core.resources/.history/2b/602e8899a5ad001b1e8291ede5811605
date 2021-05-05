@@ -1,0 +1,5 @@
+package Abstruct;
+
+public abstract class Entity {
+	
+}

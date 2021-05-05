@@ -1,0 +1,16 @@
+package Entity;
+
+import Abstruct.Entity;
+
+public class Gamer extends Entity {
+	
+	private String name;
+	private String surname;
+	private String identityNumber;
+	private Communication communication;
+	
+	public Gamer() 
+	{
+		
+	}
+}

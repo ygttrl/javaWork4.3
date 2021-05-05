@@ -1,0 +1,9 @@
+package Entity;
+
+import Abstruct.Entity;
+
+public class Game extends Entity {
+	
+	
+	
+}

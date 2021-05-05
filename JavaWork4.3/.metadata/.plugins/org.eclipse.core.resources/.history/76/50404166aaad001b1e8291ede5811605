@@ -1,0 +1,18 @@
+package Entity;
+
+import java.time.LocalDate;
+
+import Abstruct.Entity;
+
+public class Game extends Entity {
+	
+	private String gameName;
+	private LocalDate publishDate;
+	private GameCategory gameCategory;
+	
+	public Game() 
+	{
+		
+	}
+	
+}

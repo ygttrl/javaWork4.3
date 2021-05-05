@@ -1,0 +1,26 @@
+package Concrete;
+
+import Abstruct.GameService;
+import Entity.Game;
+
+public class GameManager implements GameService {
+
+	@Override
+	public void Add(Game game) {
+		System.out.println(game.getId() +" "+game.getGameName()+" "+game.getPublishDate()+" "+game.getGameCategory().getCategoryName()+" Oyun Eklendi.ç");
+		
+	}
+
+	@Override
+	public void Update(Game game) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(Game game) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

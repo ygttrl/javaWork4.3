@@ -1,0 +1,26 @@
+package Concrete;
+
+import Abstruct.SaleService;
+import Entity.Sale;
+
+public class SaleManager implements SaleService {
+
+	@Override
+	public void Add(Sale sale) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(Sale sale) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(Sale sale) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

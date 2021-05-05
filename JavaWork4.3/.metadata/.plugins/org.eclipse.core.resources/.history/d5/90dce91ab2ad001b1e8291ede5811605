@@ -1,0 +1,26 @@
+package Concrete;
+
+import Abstruct.DiscountService;
+import Entity.Discount;
+
+public class DiscountManager implements DiscountService {
+
+	@Override
+	public void Add(Discount discount) {
+		System.out.println(discount.getId()+" "+discount.getDiscountRate()+" "+discount.getDiscountName()+" Ýnidirim Eklendi");
+		
+	}
+
+	@Override
+	public void Update(Discount discount) {
+		System.out.println(discount.getId()+" 'li Ýnidirim Eklendi");
+		
+	}
+
+	@Override
+	public void Delete(Discount discount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

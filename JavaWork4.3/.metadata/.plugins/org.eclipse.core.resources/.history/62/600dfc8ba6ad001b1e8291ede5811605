@@ -1,0 +1,9 @@
+package Entity;
+
+import Abstruct.Entity;
+
+public class Communication extends Entity {
+	private String phoneNumber;
+	private String email;
+	
+}

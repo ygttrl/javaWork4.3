@@ -1,0 +1,11 @@
+package Abstruct;
+
+import Entity.GameCategory;
+
+public interface GameCategoryService {
+	
+	void Add(GameCategory game);
+	void Update(GameCategory game);
+	void Delete(GameCategory game);
+	
+}

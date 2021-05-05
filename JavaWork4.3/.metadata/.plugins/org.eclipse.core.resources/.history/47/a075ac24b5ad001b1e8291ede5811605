@@ -1,0 +1,36 @@
+package Concrete;
+
+import Abstruct.PriceCalculate;
+import Abstruct.SaleService;
+import Entity.Sale;
+
+public class SaleManager implements SaleService,PriceCalculate {
+
+	@Override
+	public void Add(Sale sale) {
+		System.out.println(sale.getId()+" "+sale.getGame().getGameName()+" "+sale.getGamer().getName()+"-"+sale.getGamer().getSurname()+ " " +sale.getDiscount().getId()
+				+" Satýþ Eklendi");
+		
+	}
+
+	@Override
+	public void Update(Sale sale) {
+		System.out.println(sale.getId()+" 'li Satýþ Güncellendi.");
+		
+	}
+
+	@Override
+	public void Delete(Sale sale) {
+		System.out.println(sale.getId()+" 'li Satýþ SÝLÝNDÝ!!!");
+		
+	}
+
+	@Override
+	public int Calculate(Sale sale) {
+		int disPrice = sale.getGame().getPrice() -  sale.getDiscount().getDiscountRate();
+		return 0;
+	}
+
+	
+
+}

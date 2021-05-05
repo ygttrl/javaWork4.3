@@ -1,0 +1,35 @@
+package Concrete;
+
+import Abstruct.CommunicationService;
+import Entity.Communication;
+
+public class CommunicationManager implements CommunicationService {
+
+	@Override
+	public void Add(Communication communicationService) {
+		System.out.println(
+				communicationService.getId()
+				+" "
+				+communicationService.getPhoneNumber()
+				+" "
+				+communicationService.getAddress()
+				+" Eklendi "
+				
+				);
+		
+	}
+
+	@Override
+	public void Update(Communication communicationService) {
+		
+		System.out.println(communicationService.getId() + "'li iletiþim güncellendi.");
+	}
+
+	@Override
+	public void Delete(Communication communicationService) {
+		System.out.println(communicationService.getId() + "'li iletiþim SÝLÝNDÝ.");
+		
+	}
+
+
+}

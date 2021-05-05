@@ -1,0 +1,28 @@
+package Concrete;
+
+import Abstruct.GamerService;
+import Entity.Gamer;
+
+public class GamerManager implements GamerService {
+
+	
+	
+	@Override
+	public void Add(Gamer gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Update(Gamer gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(Gamer gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

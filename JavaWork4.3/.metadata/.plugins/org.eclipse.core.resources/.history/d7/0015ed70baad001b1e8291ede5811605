@@ -1,0 +1,24 @@
+import Concrete.GamerManager;
+import Concrete.MersisManager;
+import Concrete.Logs.SmsLog;
+import Entity.Communication;
+import Entity.Gamer;
+
+public class MAIN {
+
+	public static void main(String[] args) {
+		
+		Communication communication = new Communication(1, "5553332211", "deneme@gmail.com", "adres1");
+		
+		Gamer gamer = new Gamer(1, "Mahmut", "Erdem", "456789153", communication);
+		System.out.println(gamer.getCommunication().getPhoneNumber());
+		
+		GamerManager gamerManager = new GamerManager(new MersisManager(),new SmsLog());
+		gamerManager.Add(gamer);
+		 
+		
+		
+		
+	}
+
+}

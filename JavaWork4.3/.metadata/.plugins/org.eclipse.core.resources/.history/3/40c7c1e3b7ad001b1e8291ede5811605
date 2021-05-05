@@ -1,0 +1,28 @@
+package Concrete;
+
+import Abstruct.GameCategoryService;
+import Entity.GameCategory;
+
+public class GameCategoryManager implements GameCategoryService {
+
+	@Override
+	public void Add(GameCategory gameCategory) {
+		System.out.println(gameCategory.getId()+" "+gameCategory.getCategoryName()+" Oyun Kategorisi eklendi.");
+		
+	}
+
+	@Override
+	public void Update(GameCategory gameCategory) {
+		System.out.println(gameCategory.getId()+" 'li Oyun Kategorisi Güncellendi.");
+		
+	}
+
+	@Override
+	public void Delete(GameCategory gameCategory) {
+		System.out.println(gameCategory.getId()+" 'li Oyun Kategorisi SÝLÝNDÝ.");
+		
+	}
+
+	
+
+}

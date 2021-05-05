@@ -1,0 +1,38 @@
+package Concrete;
+
+import Abstruct.GameService;
+import Abstruct.Log;
+import Entity.Game;
+
+public class GameManager implements GameService {
+
+	private Log log;
+	
+	public GameManager(Log log) {
+		
+		this.log = log;
+	}
+
+	@Override
+	public void Add(Game game) {
+		try {
+			System.out.println(game.getId() +" "+game.getGameName()+" "+game.getPublishDate()+" "+game.getGameCategory().getCategoryName()+" Oyun Eklendi.");
+			log.LogMessage(game, "Baþarýlý.");
+		} catch (Exception e) {
+			log.LogMessage(game, "Hatalý.");
+		}
+	}
+
+	@Override
+	public void Update(Game game) {
+		System.out.println(game.getId() +" 'li Oyun Güncellendi.");
+		
+	}
+
+	@Override
+	public void Delete(Game game) {
+		System.out.println(game.getId() +" 'li Oyun SÝLÝNDÝ!!!");
+		
+	}
+
+}

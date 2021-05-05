@@ -1,0 +1,52 @@
+package Concrete;
+
+import Abstruct.GameCategoryService;
+import Abstruct.Log;
+import Entity.GameCategory;
+
+public class GameCategoryManager implements GameCategoryService {
+
+	
+	private Log log;
+	
+	public GameCategoryManager(Log log) {
+		
+		this.log = log;
+	}
+
+	@Override
+	public void Add(GameCategory gameCategory) {
+		
+		try {
+			System.out.println(gameCategory.getId()+" "+gameCategory.getCategoryName()+" Oyun Kategorisi eklendi.");
+			log.LogMessage(gameCategory, "Baþarýlý");
+		} catch (Exception e) {
+			log.LogMessage(gameCategory, "Hatalý");
+		}	
+		
+		
+	}
+
+	@Override
+	public void Update(GameCategory gameCategory) {
+		
+		try {
+			System.out.println(gameCategory.getId()+" 'li Oyun Kategorisi Güncellendi.");
+			log.LogMessage(gameCategory, "Baþarýlý");
+		} catch (Exception e) {
+			log.LogMessage(gameCategory, "Hatalý");
+		}
+		
+		
+		
+	}
+
+	@Override
+	public void Delete(GameCategory gameCategory) {
+		System.out.println(gameCategory.getId()+" 'li Oyun Kategorisi SÝLÝNDÝ.");
+		
+	}
+
+	
+
+}

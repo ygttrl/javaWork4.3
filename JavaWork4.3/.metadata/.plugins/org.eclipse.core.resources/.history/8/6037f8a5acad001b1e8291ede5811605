@@ -1,0 +1,8 @@
+package Abstruct;
+
+public interface CommunicationService {
+	
+	void Add(CommunicationService communicationService);
+	void Update(CommunicationService communicationService);
+	void Delete(CommunicationService communicationService);
+}

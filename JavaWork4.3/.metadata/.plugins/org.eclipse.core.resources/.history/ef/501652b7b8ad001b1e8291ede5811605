@@ -1,0 +1,51 @@
+package Concrete;
+
+import Abstruct.GamerService;
+import Abstruct.Log;
+import Abstruct.MersisService;
+import Entity.Gamer;
+
+public class GamerManager implements GamerService {
+
+	private MersisService mersisService ;
+	private Log log;
+	
+	
+	public GamerManager(MersisService mersisService,Log log) {
+	
+		this.mersisService = mersisService;
+		this.log=log;
+	}
+
+	@Override
+	public void Add(Gamer gamer) {
+		
+		try {
+			if (mersisService.CheckPerson(gamer)) {			
+				System.out.println(
+							gamer.getId()+""+gamer.getName()+""+gamer.getSurname()+" "+gamer.getIdentityNumber()+" "
+				+gamer.getCommunication().getEmail()+"Gamer Eklendi."
+						);
+			}
+			log.LogMessage(gamer, "Baþarýlý");
+		} catch (Exception e) {
+			log.LogMessage(gamer, "Hatalý");
+		}
+
+		
+		
+	}
+
+	@Override
+	public void Update(Gamer gamer) {
+		System.out.println(gamer.getId()+" id'li Gamer güncellendi.");
+		
+	}
+
+	@Override
+	public void Delete(Gamer gamer) {
+		System.out.println(gamer.getId()+" id'li Gamer silindi!!");
+		
+	}
+
+}

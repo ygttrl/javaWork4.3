@@ -1,0 +1,29 @@
+package Concrete;
+
+import Abstruct.GameCategoryService;
+import Entity.Game;
+import Entity.GameCategory;
+
+public class GameCategoryManager implements GameCategoryService {
+
+	@Override
+	public void Add(GameCategory gameCategory) {
+		System.out.println();
+		
+	}
+
+	@Override
+	public void Update(GameCategory gameCategory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(GameCategory gameCategory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Abstruct.Entity"/>
+    <fullyQualifiedTypeName name="Abstruct.CommunicationService"/>
+    <fullyQualifiedTypeName name="Entity.Communication"/>
+    <fullyQualifiedTypeName name="Abstruct.GamerService"/>
+    <fullyQualifiedTypeName name="Abstruct.GameCategoryService"/>
+    <fullyQualifiedTypeName name="Abstruct.GameService"/>
+    <fullyQualifiedTypeName name="Abstruct.DiscountService"/>
+    <fullyQualifiedTypeName name="Abstruct.SaleService"/>
+    <fullyQualifiedTypeName name="Abstruct.PriceCalculate"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.Log"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Abstruct.Log"/>
+    <fullyQualifiedTypeName name="Entity.Gamer"/>
+    <fullyQualifiedTypeName name="Concrete.GamerManager"/>
+    <fullyQualifiedTypeName name="Abstruct.MersisService"/>
+    <fullyQualifiedTypeName name="Concrete.MersisManager"/>
+    <fullyQualifiedTypeName name="Entity.Game"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="Entity.GameCategory"/>
+    <fullyQualifiedTypeName name="Concrete.GameCategoryManager"/>
+    <fullyQualifiedTypeName name="Concrete.CommunicationManager"/>
+    <fullyQualifiedTypeName name="Concrete.Logs.FileLog"/>
+    <fullyQualifiedTypeName name="Concrete.GameManager"/>
+    <fullyQualifiedTypeName name="Concrete.Logs.SmsLog"/>
+    <fullyQualifiedTypeName name="Entity.Discount"/>
+    <fullyQualifiedTypeName name="Concrete.DiscountManager"/>
+    <fullyQualifiedTypeName name="Entity.Sale"/>
+    <fullyQualifiedTypeName name="Concrete.SaleManager"/>
+    <fullyQualifiedTypeName name="Concrete.Logs.DataBaseLog"/>
+</qualifiedTypeNameHistroy>

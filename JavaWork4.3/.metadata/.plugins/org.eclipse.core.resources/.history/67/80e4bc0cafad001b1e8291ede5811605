@@ -1,0 +1,42 @@
+package Concrete;
+
+import Abstruct.GamerService;
+import Abstruct.MersisService;
+import Entity.Gamer;
+
+public class GamerManager implements GamerService {
+
+	private MersisService mersisService ;
+	
+	
+	public GamerManager(MersisService mersisService) {
+	
+		this.mersisService = mersisService;
+	}
+
+	@Override
+	public void Add(Gamer gamer) {
+
+		if (mersisService.CheckPerson(gamer)) {
+			
+			System.out.println(
+						
+					);
+			
+		}
+		
+	}
+
+	@Override
+	public void Update(Gamer gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Delete(Gamer gamer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

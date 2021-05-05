@@ -1,0 +1,10 @@
+package Entity;
+
+import Abstruct.Entity;
+
+public class Sale extends Entity {
+	
+	private Gamer gamer;
+	private Game game;
+	private Discount discount;
+}

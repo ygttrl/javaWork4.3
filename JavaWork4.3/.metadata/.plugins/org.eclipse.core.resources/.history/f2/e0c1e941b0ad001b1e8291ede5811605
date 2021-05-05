@@ -1,0 +1,7 @@
+package Abstruct;
+
+public interface GameService {
+      void Add();
+      void Update();
+      void Delete();
+}
